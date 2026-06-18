@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remy Esko | IT-Laitteiden Huolto & Ylläpito</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #2b2d42;
+            line-height: 1.6;
+            background-color: #d8ecff;
+        }
+        
+        header {
+            background: #1a202c;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            letter-spacing: 0.5px;
+        }
+        header p {
+            margin: 0.5rem 0 0;
+            color: #a0aec0;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Esittelyosio */
+        .intro-section {
+            background-image: url('kone.png');
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+
+            padding: 3rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .intro-section h2 {
+            color: #2b6cb0;
+            margin-top: 0;
+        }
+        .intro-text {
+            font-size: 1.1rem;
+            color: #4a5568;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        /* Osaamisalueet */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        .service-box {
+            background-image: url('kone.png');
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid #2b6cb0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        .service-box h3 {
+            margin-top: 0;
+            color: #1a202c;
+        }
+
+        /* Miten toimin -osio */
+        .how-I-work {
+            background-image: url('kone.png');
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+        }
+        .how-I-work h3 {
+            margin-top: 0;
+            color: #2b6cb0;
+        }
+
+        /* Yhteystiedot */
+        .contact-box {
+            background: #2b6cb0;
+            color: #fff;
+            text-align: center;
+            padding: 3rem 2rem;
+            border-radius: 8px;
+        }
+        .contact-box h2 {
+            margin-top: 0;
+        }
+        .contact-box a {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #319795;
+            color: #fff;
+            padding: 0.8rem 1.8rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: #287474;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Remy Esko</h1>
+        <h3>IT-alan ammattilainen</h3>
+    </header>
+
+    <div class="container">
+
+        <!-- Esittely -->
+        <section class="intro-section">
+            <h2>Moi, olen Remy!</h2>
+            <p class="intro-text">
+                Autan ihmisiä ja välillä yrityksiä heidän IT-ongelmissa. Olen erikoistunut IT-laitteiden huoltoon, vianmääritykseen ja ylläpitoon. Kun laite hidastelee tai lakkaa toimimasta, hoidan sen kuntoon tehokkaasti ja kätevästi.
+            </p>
+            <a href="#yhteystiedot" class="btn">Ota yhteyttä tästä</a>
+        </section>
+
+        <!-- Palvelut / Osaaminen -->
+        <h2 style="text-align: center; margin-bottom: 1.5rem;">Miten voin auttaa sinua?</h2>
+        <section class="services-grid">
+            <div class="service-box">
+                <h3>Laitteiden korjaus & osat</h3>
+                <p>Vaihdan rikkoutuneet näytöt, akut, kovalevyt ja muut komponentit tietokoneisiin ja oheislaitteisiin.</p>
+            </div>
+            <div class="service-box">
+                <h3>Huolto & Optimointi</h3>
+                <p>Puhdistan laitteet fyysisesti pölystä, vaihdan lämpötahnat ja siistin käyttöjärjestelmän, jotta kone toimii taas kuin uusi.</p>
+            </div>
+            <div class="service-box">
+                <h3>Ylläpito & Verkot</h3>
+                <p>Teen tietoturvapäivitykset, varmuuskopioinnit sekä kodin tai toimiston langattomien verkkojen (Wi-Fi) asennukset.</p>
+            </div>
+                <div class="service-box">
+                <h3>Tulostimet & Muuta</h3>
+                <p>Myös hoituu tulostimet, skannerit, kuittikoneet ja jopa muita tietokoneisiin liittyvät laitteet</p>
+            </div>
+        </section>
+
+        <!-- Kevytyrittäjyys / Työtapa -->
+        <section class="how-I-work">
+            <h3>Miten yhteistyö toimii?</h3>
+            <p>Toimin joustavasti kevytyrittäjänä. Minulla ei ole perinteistä kivijalkaliikettä, minkä ansiosta pystyn tarjoamaan palvelut edullisesti ja usein jopa suoraan asiakkaan luona (Hämeenlinnan ja lähikuntien alueella).</p>
+
+        </section>
+
+        <!-- Yhteystiedot -->
+        <section id="yhteystiedot" class="contact-box">
+            <h2>Pyydä apua laiteongelmaan</h2>
+            <p>Kuvaile minulle lyhyesti mikä laite on kyseessä ja mikä siinä mättää, niin annan arvion huollon kestosta ja hinnasta!</p>
+            <p style="font-size: 1.2rem; margin: 1.5rem 0;">
+                📞 Puhelin / WhatsApp: <a href="tel:0451430878">045-1430878</a><br>
+                ✉️ Sähköposti: <a href="mailto:info.itremy@gmail.com">info.itremy@gmail.com</a>
+            </p>
+            <p><em>Toimialue: Hämeenlinna + lähikunnat. Sopimuksen mukaan myös postitse.</em></p>
+        </section>
+
+        <footer>
+            <p>© 2026 Remy Esko.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
